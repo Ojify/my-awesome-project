@@ -4,4 +4,4 @@
 Этот репозиторий является каркасом для будущего веб-приложения.
 
 ## Ссылки
-- [Публичная страница на GitHub Pages] (https://github.com/Ojify/my-awesome-project/index.html)
+- [Публичная страница на GitHub Pages] (https://ojify.github.io/my-awesome-project/)
