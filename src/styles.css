@@ -1,4 +1,3 @@
-/* БАЗА: читаемость и предсказуемость размеров */
 * {
     box-sizing: border-box;
 }
@@ -8,11 +7,31 @@ html, body {
     padding: 0;
 }
 
+.hero
+{
+    background:
+        linear-gradient(to top, rgba(0, 0, 0,.55), rgba(0, 0, 0,.15)),
+        url("img/hero.jpg") center/cover no-repeat;
+    color:#b1f6ff;
+    padding: clamp(2rem, 6vw, 6rem) 1rem;
+    border-radius:var(--radius);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
 body {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
 }
-/* Формы: размеры, отступы, визуальный порядок */
+
 label {
     display: block;
     margin: 0.5rem 0 0.25rem;
@@ -26,14 +45,28 @@ input, select, textarea, button {
     border-radius: 8px;
     background: #fff;
 }
-/* Кнопка по умолчанию */
-button, [type="submit"] {
+
+.closeButton {
     background: #0a84ff;
     color: #fff;
     border: none;
     cursor: pointer;
 }
-/* Состояния: клавиатура/мышь/ошибки */
+
+.submitButton {
+    background: #0a84ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.openButton {
+    background: #0a84ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
 :where(input, select, textarea, button):focus-visible {
     outline: 2px solid #0a84ff;
     outline-offset: 2px;
@@ -47,7 +80,7 @@ button:hover {
     opacity: .6;
     cursor: not-allowed;
 }
-/* Подсветка ошибочных полей (установите aria-invalid="true") */
+
 [aria-invalid="true"] {
     border-color: #b00020;
 }

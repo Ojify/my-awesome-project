@@ -12,8 +12,8 @@
 	<meta property="og:title" content="Заголовок страницы">
 	<meta property="og:description" content="Описание страницы">
 	<meta property="og:image" content="https://.../link-to-image.jpg">
-	<link rel="stylesheet" href="styles.css">
-	<script src="main.js" defer></script>
+	<link rel="stylesheet" href="src/styles.css">
+	<script src="src/main.js" defer></script>
 </head>
 <body>
 	<!-- Шапка сайта -->
@@ -23,8 +23,8 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">Главная</a></li>
-				<li><a href="about.html">О нас</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
+				<li><a href="src/about.html">О нас</a></li>
+				<li><a href="src/contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -32,6 +32,19 @@
 	<!-- Уникальное основное содержимое страницы -->
 	<main>
 		<h1>Добро пожаловать на наш сайт!</h1>
+
+		<video class="media" controls preload="metadata" playsinline width="960" height="540" loop muted autoplay> 
+            <source src="video/spn.mp4" type="video/mp4">
+            <source src="video/spn.webm" type="video/webm"> 
+            Ваш браузер не поддерживает видео. 
+        </video> 
+
+		<img 
+            src="img/card1.jpg" 
+            srcset="img/card1.jpg 640w, img/card2.jpg 960w, img/card3.jpg 1280w" 
+            sizes="(max-width: 700px) 92vw, (max-width: 1200px) 640px, 960px" 
+            alt="Тестовое изображение" 
+            loading="lazy">
 		
 		<!-- Секция 1 с якорем -->
 		<section id="services">
@@ -50,13 +63,24 @@
 		<section id="contacts">
 			<h2>Контактная информация</h2>
 			<p>Наши контакты...</p>
-			<a href="contacts.html">Подробнее</a> <!-- Ссылка на отдельную страницу -->
+			<a href="src/contacts.html">Подробнее</a> <!-- Ссылка на отдельную страницу -->
 		</section>
 	</main>
 	
-	<!-- Кнопка открытия модалки -->
-	<button id="openDialog" type="button">Написать нам</button>
+	<section class="hero">
+		<div class="container">
+			<h1>Обратная связь</h1>
+			<p>Вы можете связаться с нами</p>
+			<button id="openDialog" class="openButton" type="button">Написать нам</button>
+		</div>
+    </section>
 	
+	<!-- Подвал сайта -->
+	<footer>
+		<p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
+		<p>Телефон: +7 (123) 456-78-90</p>
+	</footer>
+
 	<!-- Модалка с формой -->
 	<dialog id="contactDialog" aria-labelledby="dialogTitle">
 		<h2 id="dialogTitle">Обратная связь</h2>
@@ -91,16 +115,10 @@
 			<textarea id="message" name="message" rows="4" required></textarea>
 	
 			<div class="form-actions">
-				<button type="button" id="closeDialog">Закрыть</button>
-				<button type="submit">Отправить</button>
+				<button type="button" id="closeDialog" class="closeButton">Закрыть</button>
+				<button type="submit" class="submitButton">Отправить</button>
 			</div>
 		</form>
 	</dialog>
-	
-	<!-- Подвал сайта -->
-	<footer>
-		<p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
-		<p>Телефон: +7 (123) 456-78-90</p>
-	</footer>
 </body>
 </html>
