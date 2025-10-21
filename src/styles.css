@@ -1,86 +1,54 @@
-* {
-    box-sizing: border-box;
+:root {
+    --color-main: #6c527e;
+    --color-dark: #6320cf;
+    --color-accent: #363636;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+.color-main {
+    background: var(--color-main);
 }
 
-.hero
-{
-    background:
-        linear-gradient(to top, rgba(0, 0, 0,.55), rgba(0, 0, 0,.15)),
-        url("img/hero.jpg") center/cover no-repeat;
-    color:#b1f6ff;
-    padding: clamp(2rem, 6vw, 6rem) 1rem;
-    border-radius:var(--radius);
-    min-height: 400px;
-    display: flex;
-    align-items: center;
+.color-dark {
+    background: var(--color-dark);
 }
 
-.form-actions {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-end;
-    margin-top: 20px;
+.jumping-badge {
+    transition: transform 0.3s;
 }
 
-body {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.5;
+.jumping-badge:hover {
+    transform: translateY(-3px);
 }
 
-label {
-    display: block;
-    margin: 0.5rem 0 0.25rem;
+.nav-live {
+    transition: background-color 0.3s;
 }
 
-input, select, textarea, button {
-    width: 100%;
-    max-width: 480px;
-    padding: .5rem .75rem;
-    border: 1px solid #c8c8c8;
-    border-radius: 8px;
-    background: #fff;
+.nav-live:hover {
+    background-color: var(--color-accent);
 }
 
-.closeButton {
-    background: #0a84ff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+.responsive-card {
+    transition: scale 0.3s;
 }
 
-.submitButton {
-    background: #0a84ff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+.responsive-card:hover {
+    scale: 98%;
 }
 
-.openButton {
-    background: #0a84ff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+.contact-form {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-:where(input, select, textarea, button):focus-visible {
-    outline: 2px solid #0a84ff;
-    outline-offset: 2px;
+.required::after {
+    content: " *";
+    color: #dc3545;
 }
 
-button:hover {
-    filter: brightness(0.95);
-}
-
-:disabled, [aria-disabled="true"] {
-    opacity: .6;
-    cursor: not-allowed;
-}
-
-[aria-invalid="true"] {
-    border-color: #b00020;
+.char-counter {
+    font-size: 0.875rem;
+    text-align: right;
 }
