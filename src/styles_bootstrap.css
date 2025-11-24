@@ -1,0 +1,68 @@
+:root {
+    --color-main: #6c527e;
+    --color-dark: #6320cf;
+    --color-accent: #363636;
+}
+
+.color-main {
+    background: var(--color-main);
+}
+
+.color-dark {
+    background: var(--color-dark);
+}
+
+.jumping-badge {
+    transition: transform 0.3s;
+}
+
+.jumping-badge:hover {
+    transform: translateY(-3px);
+}
+
+.nav-live {
+    transition: background-color 0.3s;
+}
+
+.nav-live:hover {
+    background-color: var(--color-accent);
+}
+
+.responsive-card {
+    transition: scale 0.3s;
+}
+
+.responsive-card:hover {
+    scale: 98%;
+}
+
+.contact-form {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.required::after {
+    content: " *";
+    color: #dc3545;
+}
+
+.char-counter {
+    font-size: 0.875rem;
+    text-align: right;
+}
+
+.adaptive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.object-fit-contain {
+    object-fit: contain;
+}
