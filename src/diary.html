@@ -1,138 +1,501 @@
+<!-- diary.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	<title>Дневник - Портфолио</title>
-	<link rel="icon" href="assets/icons/favicon.io" type="image/x-icon">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Дневник - Портфолио</title>
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 
 <body class="color-main page">
-	<a class="skip-link" href="#main">Перейти к основному содержимому</a>
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
 
-	<div class="container-fluid p-0">
-		<header class="text-white py-4" role="banner">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col">
-						<h1 class="h3 mb-1">Моё портфолио</h1>
-						<p class="mb-0 opacity-75">Студент разработчик</p>
-					</div>
-					<div class="col-auto">
-						<span class="badge color-dark">ЭФБО-10-24</span>
-					</div>
-				</div>
-			</div>
-		</header>
+    <div class="page-container">
+        <header class="site-header" role="banner">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-info">
+                        <h1 class="site-title">Моё портфолио</h1>
+                        <p class="site-subtitle">Студент разработчик</p>
+                    </div>
+                    <div class="header-badge">
+                        <span class="badge">ЭФБО-10-24</span>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Основная навигация">
-			<div class="container">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-						aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav" role="menubar">
-						<li class="nav-live nav-item" role="none">
-							<a class="nav-link" href="../index.html" role="menuitem">
-								<i class="bi bi-house me-1" aria-hidden="true"></i>Главная
-							</a>
-						</li>
-						<li class="nav-live nav-item" role="none">
-							<a class="nav-link" href="projects.html" role="menuitem">
-								<i class="bi bi-code-slash me-1" aria-hidden="true"></i>Проекты
-							</a>
-						</li>
-						<li class="nav-live nav-item" role="none">
-							<a class="nav-link active" href="#" role="menuitem" aria-current="page">
-								<i class="bi bi-newspaper me-1" aria-hidden="true"></i>Дневник
-							</a>
-						</li>
-						<li class="nav-live nav-item" role="none">
-							<a class="nav-link" href="contacts.html" role="menuitem">
-								<i class="bi bi-telephone me-1" aria-hidden="true"></i>Контакты
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+        <nav class="main-nav" aria-label="Основная навигация">
+            <div class="container">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="navbarNav" aria-label="Переключить навигацию">
+                    <span class="nav-toggle-icon"></span>
+                </button>
+                <div class="nav-menu" id="navbarNav">
+                    <ul class="nav-list" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="../index.html" role="menuitem">
+                                <i class="fas fa-home" aria-hidden="true"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="projects.html" role="menuitem">
+                                <i class="fas fa-code" aria-hidden="true"></i>Проекты
+                            </a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link active" href="#" role="menuitem" aria-current="page">
+                                <i class="fas fa-newspaper" aria-hidden="true"></i>Дневник
+                            </a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="contacts.html" role="menuitem">
+                                <i class="fas fa-phone" aria-hidden="true"></i>Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-		<main id="main" class="container my-4" role="main">
-			<section class="mb-5" aria-labelledby="progress-heading">
-				<div class="card shadow">
-					<div class="card-header bg-light">
-						<h2 id="progress-heading" class="card-title h5 mb-0">
-							<i class="bi bi-book text-primary" aria-hidden="true"></i> Мой учебный прогресс
-						</h2>
-					</div>
-					<div class="card-body">
-						<h3 class="h5">Мои текущие курсы</h3>
-						<div class="col-md-6">
-							<div class="mb-3">
-								<div class="d-flex justify-content-between mb-1">
-									<span>Фронтенд и бэкенд разработка</span>
-									<span class="text-primary">50%</span>
-								</div>
-								<div class="progress" style="height: 8px;" role="progressbar" 
-									 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-									<div class="progress-bar bg-primary" style="width: 50%;"></div>
-								</div>
-							</div>
-							<div class="mb-3">
-								<div class="d-flex justify-content-between mb-1">
-									<span>JavaScript</span>
-									<span class="text-warning">75%</span>
-								</div>
-								<div class="progress" style="height: 8px;" role="progressbar"
-									 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-									<div class="progress-bar bg-warning" style="width: 75%;"></div>
-								</div>
-							</div>
-							<div class="mb-3">
-								<div class="d-flex justify-content-between mb-1">
-									<span>C#</span>
-									<span class="text-danger">60%</span>
-								</div>
-								<div class="progress" style="height: 8px;" role="progressbar"
-									 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-									<div class="progress-bar bg-danger" style="width: 60%;"></div>
-								</div>
-							</div>
-							<div class="mb-3">
-								<div class="d-flex justify-content-between mb-1">
-									<span>PostgreSQL</span>
-									<span class="text-success">35%</span>
-								</div>
-								<div class="progress" style="height: 8px;" role="progressbar"
-									 aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
-									<div class="progress-bar bg-success" style="width: 35%;"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+        <main id="main" class="main-content" role="main" tabindex="-1">
+            <div class="container">
+                <!-- Прогресс обучения -->
+                <section class="section" aria-labelledby="progress-heading">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 id="progress-heading" class="card-title">
+                                <i class="fas fa-book" aria-hidden="true"></i> Мой учебный прогресс
+                            </h2>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="section-subtitle">Мои текущие курсы</h3>
+                            <div class="progress-grid">
+                                <div class="progress-item">
+                                    <div class="progress-header">
+                                        <span class="progress-name">Фронтенд и бэкенд разработка</span>
+                                        <span class="progress-percent frontend">50%</span>
+                                    </div>
+                                    <div class="progress-bar-container" role="progressbar" 
+                                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                         aria-label="Прогресс по курсу 'Фронтенд и бэкенд разработка': 50%">
+                                        <div class="progress-bar frontend" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="progress-item">
+                                    <div class="progress-header">
+                                        <span class="progress-name">JavaScript</span>
+                                        <span class="progress-percent javascript">75%</span>
+                                    </div>
+                                    <div class="progress-bar-container" role="progressbar" 
+                                         aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                         aria-label="Прогресс по курсу 'JavaScript': 75%">
+                                        <div class="progress-bar javascript" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="progress-item">
+                                    <div class="progress-header">
+                                        <span class="progress-name">C#</span>
+                                        <span class="progress-percent csharp">60%</span>
+                                    </div>
+                                    <div class="progress-bar-container" role="progressbar" 
+                                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                         aria-label="Прогресс по курсу 'C#': 60%">
+                                        <div class="progress-bar csharp" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="progress-item">
+                                    <div class="progress-header">
+                                        <span class="progress-name">PostgreSQL</span>
+                                        <span class="progress-percent postgresql">35%</span>
+                                    </div>
+                                    <div class="progress-bar-container" role="progressbar" 
+                                         aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"
+                                         aria-label="Прогресс по курсу 'PostgreSQL': 35%">
+                                        <div class="progress-bar postgresql" style="width: 35%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-		<footer class="bg-dark text-white py-4 mt-5" role="contentinfo">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-6">
-						<p class="mb-0">&copy; 2025 Портфолио студента. Все права защищены.</p>
-					</div>
-					<div class="col-md-6 text-md-end">
-						<i class="bi bi-telephone me-1" aria-hidden="true"></i>
-						<a href="contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
+                <!-- Детали прогресса в виде временной шкалы -->
+                <section class="section" aria-labelledby="progress-details-heading">
+                    <div class="card">
+                        <div class="card-header timeline-header">
+                            <h3 id="progress-details-heading" class="card-title">
+                                <i class="fas fa-chart-line" aria-hidden="true"></i> Хронология обучения
+                            </h3>
+                            <button class="btn-add" id="openModalBtn">
+                                <i class="fas fa-plus"></i> Добавить запись
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="timeline" id="timelineContainer">
+                                <!-- Элемент 1 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-date">15 сен</div>
+                                    <div class="timeline-marker frontend"></div>
+                                    <div class="timeline-content frontend">
+                                        <h4>Верстка макета сайта с адаптивными изображениями</h4>
+                                        <p>Освоил создание отзывчивых макетов с использованием Flexbox и Grid. Научился работать с адаптивными изображениями для разных разрешений экрана.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Элемент 2 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-date">20 сен</div>
+                                    <div class="timeline-marker javascript"></div>
+                                    <div class="timeline-content javascript">
+                                        <h4>JavaScript основы и работа с формами</h4>
+                                        <p>Изучил основы JavaScript: переменные, функции, DOM-манипуляции. Реализовал валидацию форм и интерактивные элементы на сайте.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Элемент 3 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-date">01 окт</div>
+                                    <div class="timeline-marker frontend"></div>
+                                    <div class="timeline-content frontend">
+                                        <h4>Оптимизация изображений и работа с Picture element</h4>
+                                        <p>Научился оптимизировать изображения для веба и использовать современный элемент &lt;picture&gt; для адаптивной загрузки изображений.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Элемент 4 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-date">05 окт</div>
+                                    <div class="timeline-marker frontend"></div>
+                                    <div class="timeline-content frontend">
+                                        <h4>Адаптивный дизайн и поддержка Retina-экранов</h4>
+                                        <p>Освоил создание дизайна, который корректно отображается на экранах с высокой плотностью пикселей (Retina).</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Элемент 5 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-date">10 окт</div>
+                                    <div class="timeline-marker csharp"></div>
+                                    <div class="timeline-content csharp">
+                                        <h4>Начало изучения C# и ООП</h4>
+                                        <p>Приступил к изучению языка C#, освоил основные концепции объектно-ориентированного программирования.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Элемент 6 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-date">15 окт</div>
+                                    <div class="timeline-marker postgresql"></div>
+                                    <div class="timeline-content postgresql">
+                                        <h4>Основы баз данных и SQL</h4>
+                                        <p>Начал изучение PostgreSQL, освоил базовые операции с данными: SELECT, INSERT, UPDATE, DELETE.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- Элемент 7 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-date">20 окт</div>
+                                    <div class="timeline-marker javascript"></div>
+                                    <div class="timeline-content javascript">
+                                        <h4>Асинхронный JavaScript и работа с API</h4>
+                                        <p>Изучил асинхронное программирование, работу с Promise, async/await и взаимодействие с внешними API.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <footer class="site-footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Портфолио студента. Все права защищены.</p>
+                    </div>
+                    <div class="footer-links">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <a href="contacts.html" class="footer-link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Модальное окно для добавления записи -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">Добавить новую запись</h3>
+                <button class="modal-close" id="closeModalBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="addTimelineForm">
+                    <div class="form-group">
+                        <label for="entryDate">Дата</label>
+                        <input type="text" id="entryDate" name="date" placeholder="Например: 15 сен" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="entryTitle">Заголовок</label>
+                        <input type="text" id="entryTitle" name="title" placeholder="Введите заголовок" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="entryDescription">Описание</label>
+                        <textarea id="entryDescription" name="description" rows="3" placeholder="Введите описание"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Курс</label>
+                        <div class="course-options">
+                            <label class="course-option">
+                                <input type="radio" name="course" value="frontend" checked>
+                                <span class="course-color frontend"></span>
+                                <span class="course-name">Фронтенд</span>
+                            </label>
+                            <label class="course-option">
+                                <input type="radio" name="course" value="javascript">
+                                <span class="course-color javascript"></span>
+                                <span class="course-name">JavaScript</span>
+                            </label>
+                            <label class="course-option">
+                                <input type="radio" name="course" value="csharp">
+                                <span class="course-color csharp"></span>
+                                <span class="course-name">C#</span>
+                            </label>
+                            <label class="course-option">
+                                <input type="radio" name="course" value="postgresql">
+                                <span class="course-color postgresql"></span>
+                                <span class="course-name">PostgreSQL</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Добавить</button>
+                        <button type="button" class="btn-cancel" id="cancelModalBtn">Отмена</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Навигация
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                    navToggle.setAttribute('aria-expanded', !isExpanded);
+                    navMenu.classList.toggle('show');
+                });
+                
+                document.addEventListener('click', function(event) {
+                    if (!event.target.closest('.main-nav') && navMenu.classList.contains('show')) {
+                        navMenu.classList.remove('show');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+            
+            // Анимация прогресс-баров с цветными эффектами
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                
+                setTimeout(() => {
+                    bar.style.transition = 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1)';
+                    bar.style.width = width;
+                    
+                    // Обновление ARIA
+                    const container = bar.parentElement;
+                    const value = parseInt(width);
+                    container.setAttribute('aria-valuenow', value);
+                    container.setAttribute('aria-valuetext', `${value}% завершено`);
+                }, 300);
+            });
+            
+            // Skip link
+            const skipLink = document.querySelector('.skip-link');
+            const mainContent = document.getElementById('main');
+            
+            if (skipLink && mainContent) {
+                skipLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    mainContent.focus();
+                });
+            }
+            
+            // Анимация появления элементов временной шкалы
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            timelineItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 100 + index * 100);
+            });
+            
+            // Модальное окно для добавления записей
+            const modalOverlay = document.getElementById('modalOverlay');
+            const openModalBtn = document.getElementById('openModalBtn');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            const cancelModalBtn = document.getElementById('cancelModalBtn');
+            const addTimelineForm = document.getElementById('addTimelineForm');
+            const timelineContainer = document.getElementById('timelineContainer');
+            
+            // Открытие модального окна
+            openModalBtn.addEventListener('click', function() {
+                modalOverlay.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Блокируем скролл страницы
+            });
+            
+            // Закрытие модального окна
+            function closeModal() {
+                modalOverlay.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Восстанавливаем скролл
+                addTimelineForm.reset();
+            }
+            
+            closeModalBtn.addEventListener('click', closeModal);
+            cancelModalBtn.addEventListener('click', closeModal);
+            
+            // Закрытие по клику вне модального окна
+            modalOverlay.addEventListener('click', function(e) {
+                if (e.target === modalOverlay) {
+                    closeModal();
+                }
+            });
+            
+            // Закрытие по клавише Escape
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modalOverlay.style.display === 'flex') {
+                    closeModal();
+                }
+            });
+            
+            // Обработка формы добавления записи
+            addTimelineForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(addTimelineForm);
+                const date = formData.get('date');
+                const title = formData.get('title');
+                const description = formData.get('description');
+                const course = formData.get('course');
+                
+                // Создаем новый элемент временной шкалы
+                const newTimelineItem = document.createElement('div');
+                newTimelineItem.className = 'timeline-item';
+                newTimelineItem.style.opacity = '0';
+                newTimelineItem.style.transform = 'translateY(20px)';
+                
+                // Определяем классы для выбранного курса
+                const courseClass = course;
+                const courseColors = {
+                    frontend: '#3498db',
+                    javascript: '#f39c12',
+                    csharp: '#9b59b6',
+                    postgresql: '#1abc9c'
+                };
+                
+                newTimelineItem.innerHTML = `
+                    <div class="timeline-date">${date}</div>
+                    <div class="timeline-marker ${courseClass}"></div>
+                    <div class="timeline-content ${courseClass}">
+                        <h4>${title}</h4>
+                        <p>${description}</p>
+                    </div>
+                `;
+                
+                // Добавляем элемент в конец временной шкалы
+                timelineContainer.appendChild(newTimelineItem);
+                
+                // Анимируем появление нового элемента
+                setTimeout(() => {
+                    newTimelineItem.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    newTimelineItem.style.opacity = '1';
+                    newTimelineItem.style.transform = 'translateY(0)';
+                }, 100);
+                
+                // Закрываем модальное окно и сбрасываем форму
+                closeModal();
+                
+                // Показываем уведомление об успешном добавлении
+                showNotification('Запись успешно добавлена в хронологию!');
+            });
+            
+            // Функция для показа уведомлений
+            function showNotification(message) {
+                // Создаем элемент уведомления
+                const notification = document.createElement('div');
+                notification.className = 'notification';
+                notification.textContent = message;
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: linear-gradient(135deg, #2ecc71, #27ae60);
+                    color: white;
+                    padding: 15px 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+                    z-index: 1001;
+                    animation: slideIn 0.3s ease, fadeOut 0.3s ease 2.7s forwards;
+                    font-weight: 500;
+                `;
+                
+                // Добавляем стили для анимации
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes slideIn {
+                        from {
+                            transform: translateX(100%);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                    @keyframes fadeOut {
+                        from {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }
+                        to {
+                            opacity: 0;
+                            transform: translateX(100%);
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+                
+                document.body.appendChild(notification);
+                
+                // Удаляем уведомление через 3 секунды
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                    if (style.parentNode) {
+                        style.parentNode.removeChild(style);
+                    }
+                }, 3000);
+            }
+        });
+    </script>
 </body>
 </html>

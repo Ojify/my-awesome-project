@@ -1,382 +1,394 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	<title>Главная - Портфолио</title>
-	<link rel="icon" href="assets/icons/favicon.io" type="image/x-icon">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="src/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Главная - Портфолио</title>
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body class="color-main page">
-	<a class="skip-link" href="#main">Перейти к основному содержимому</a>
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
 
-	<div class="container-fluid p-0">
-		<header class="text-white py-4" role="banner">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col">
-						<h1 class="h3 mb-1">Моё портфолио</h1>
-						<p class="mb-0 opacity-75">Студент разработчик</p>
-					</div>
-					<div class="col-auto">
-						<span class="badge color-dark">ЭФБО-10-24</span>
-					</div>
-				</div>
-			</div>
-		</header>
+    <div class="page-container">
+        <header class="site-header" role="banner">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-info">
+                        <h1 class="site-title">Моё портфолио</h1>
+                        <p class="site-subtitle">Студент разработчик</p>
+                    </div>
+                    <div class="header-badge">
+                        <span class="badge">ЭФБО-10-24</span>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Основная навигация">
-			<div class="container">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-						aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav" role="menubar">
-						<li class="nav-live nav-item" role="none">
-							<a class="nav-link active" href="#" role="menuitem" aria-current="page">
-								<i class="bi bi-house me-1" aria-hidden="true"></i>Главная
-							</a>
-						</li>
-						<li class="nav-live nav-item" role="none">
-							<a class="nav-link" href="src/projects.html" role="menuitem">
-								<i class="bi bi-code-slash me-1" aria-hidden="true"></i>Проекты
-							</a>
-						</li>
-						<li class="nav-live nav-item" role="none">
-							<a class="nav-link" href="src/diary.html" role="menuitem">
-								<i class="bi bi-newspaper me-1" aria-hidden="true"></i>Дневник
-							</a>
-						</li>
-						<li class="nav-live nav-item" role="none">
-							<a class="nav-link" href="src/contacts.html" role="menuitem">
-								<i class="bi bi-telephone me-1" aria-hidden="true"></i>Контакты
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+        <nav class="main-nav" aria-label="Основная навигация">
+            <div class="container">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="navbarNav" aria-label="Переключить навигацию">
+                    <span class="nav-toggle-icon"></span>
+                </button>
+                <div class="nav-menu" id="navbarNav">
+                    <ul class="nav-list" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a class="nav-link active" href="#" role="menuitem" aria-current="page">
+                                <i class="fas fa-home" aria-hidden="true"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="src/projects.html" role="menuitem">
+                                <i class="fas fa-code" aria-hidden="true"></i>Проекты
+                            </a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="src/diary.html" role="menuitem">
+                                <i class="fas fa-newspaper" aria-hidden="true"></i>Дневник
+                            </a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a class="nav-link" href="src/contacts.html" role="menuitem">
+                                <i class="fas fa-phone" aria-hidden="true"></i>Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-		<main id="main" class="container my-4" role="main" tabindex="-1">
-			<!-- Содержимое остается без изменений -->
-			<section class="mb-5" aria-labelledby="profile-heading">
-				<div class="card shadow">
-					<div class="card-body p-4">
-						<div class="row align-items-center">
-							<div class="col-md-3 text-center mb-3 mb-md-0">
-								<figure>
-									<picture>
-										<source srcset="img/profilePicture.webp" type="image/webp">
-										<img class="img-fluid rounded-circle adaptive-image object-fit-cover" 
-											 style="width: 150px; height: 150px;" 
-											 src="img/profilePicture.jpg" 
-											 alt="Портрет Лысогорского Никиты Юрьевича"
-											 width="150" 
-											 height="150"
-											 loading="eager">
-									</picture>
-									<figcaption class="sr-only">Портрет Лысогорского Никиты Юрьевича</figcaption>
-								</figure>
-							</div>
-							<div class="col-md-9">
-								<h2 id="profile-heading" class="card-title h4 text-primary">Лысогорский Никита Юрьевич</h2>
-								<p class="card-text text-muted mb-2">
-									<i class="bi bi-bookmark-check-fill text-primary" aria-hidden="true"></i> 
-									Студент группы ЭФБО-10-24
-								</p>
-								<p class="card-text">
-									Факультет информационных технологий, специальность "Фуллстэк разработчик"
-								</p>
-								<div class="d-flex gap-2 flex-wrap" role="list" aria-label="Технологии">
-									<span class="jumping-badge badge bg-primary" role="listitem">HTML</span>
-									<span class="jumping-badge badge bg-danger" role="listitem">CSS</span>
-									<span class="jumping-badge badge bg-warning" role="listitem">JavaScript</span>
-									<span class="jumping-badge badge bg-success" role="listitem">Bootstrap</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+        <main id="main" class="main-content" role="main" tabindex="-1">
+            <div class="container">
+                <!-- Профиль -->
+                <section class="section profile-section" aria-labelledby="profile-heading">
+                    <div class="card profile-card">
+                        <div class="card-body">
+                            <div class="profile-grid">
+                                <div class="profile-image-container">
+                                    <figure>
+                                        <img class="profile-image" 
+                                             src="img/profilePicture.jpg" 
+                                             alt="Фото студента - Лысогорский Никита Юрьевич"
+                                             width="200" 
+                                             height="200"
+                                             loading="eager">
+                                        <figcaption class="sr-only">Фото студента</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="profile-info">
+                                    <h2 id="profile-heading" class="card-title">Лысогорский Никита Юрьевич</h2>
+                                    <p class="profile-subtitle">
+                                        <i class="fas fa-graduation-cap" aria-hidden="true"></i> 
+                                        Студент группы ЭФБО-10-24
+                                    </p>
+                                    <p class="profile-description">
+                                        Факультет информационных технологий, специальность "Фуллстэк разработчик"
+                                    </p>
+                                    <div class="tech-tags" role="list" aria-label="Технологии">
+                                        <span class="tech-tag" role="listitem">HTML</span>
+                                        <span class="tech-tag" role="listitem">CSS</span>
+                                        <span class="tech-tag" role="listitem">JavaScript</span>
+                                        <span class="tech-tag" role="listitem">Bootstrap</span>
+                                        <span class="tech-tag" role="listitem">React</span>
+                                        <span class="tech-tag" role="listitem">Node.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-			<section class="mb-5" aria-labelledby="about-heading">
-				<div class="card shadow">
-					<div class="card-header bg-light">
-						<h3 id="about-heading" class="card-title h5 mb-0">
-							<i class="bi bi-person-circle text-primary" aria-hidden="true"></i> Обо мне
-						</h3>
-					</div>
-					<div class="card-body">
-						<p class="card-text">
-							Я увлекаюсь веб-разработкой и изучаю современные технологии.
-							В свободное время занимаюсь созданием пет-проектов и изучаю новые фреймворки.
-						</p>
-						<p class="card-text">
-							Мои основные интересы: фронтенд разработка, UX/UI дизайн и мобильная разработка.
-							Стремлюсь к созданию качественных и удобных пользовательских интерфейсов.
-						</p>
-					</div>
-				</div>
-			</section>
+                <!-- Обо мне -->
+                <section class="section" aria-labelledby="about-heading">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 id="about-heading" class="card-title">
+                                <i class="fas fa-user-circle" aria-hidden="true"></i> Обо мне
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Я увлекаюсь веб-разработкой и изучаю современные технологии.
+                                В свободное время занимаюсь созданием пет-проектов и изучаю новые фреймворки.
+                            </p>
+                            <p>
+                                Мои основные интересы: фронтенд разработка, UX/UI дизайн и мобильная разработка.
+                                Стремлюсь к созданию качественных и удобных пользовательских интерфейсов.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
-			<section class="mb-5" aria-labelledby="skills-heading">
-				<div class="card shadow skills-container">
-					<div class="card-header bg-light">
-						<h3 id="skills-heading" class="card-title h5 mb-0">
-							<i class="bi bi-tools text-primary" aria-hidden="true"></i> Мои навыки
-						</h3>
-					</div>
-					<div class="card-body">
-						<div class="row skills-grid">
-							<div class="col-md-6">
-								<div class="mb-3">
-									<div class="d-flex justify-content-between mb-1">
-										<span>HTML</span>
-										<span class="text-primary" aria-hidden="true">90%</span>
-									</div>
-									<div class="progress" style="height: 8px;" role="progressbar" 
-										 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-										 aria-label="Уровень навыка HTML: 90 процентов">
-										<div class="progress-bar bg-primary" style="width: 90%"></div>
-									</div>
-								</div>
-								<div class="mb-3">
-									<div class="d-flex justify-content-between mb-1">
-										<span>JavaScript</span>
-										<span class="text-warning" aria-hidden="true">75%</span>
-									</div>
-									<div class="progress" style="height: 8px;" role="progressbar" 
-										 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-										 aria-label="Уровень навыка JavaScript: 75 процентов">
-										<div class="progress-bar bg-warning" style="width: 75%"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="mb-3">
-									<div class="d-flex justify-content-between mb-1">
-										<span>CSS</span>
-										<span class="text-danger" aria-hidden="true">85%</span>
-									</div>
-									<div class="progress" style="height: 8px;" role="progressbar" 
-										 aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
-										 aria-label="Уровень навыка CSS: 85 процентов">
-										<div class="progress-bar bg-danger" style="width: 85%"></div>
-									</div>
-								</div>
-								<div class="mb-3">
-									<div class="d-flex justify-content-between mb-1">
-										<span>Bootstrap</span>
-										<span class="text-success" aria-hidden="true">80%</span>
-									</div>
-									<div class="progress" style="height: 8px;" role="progressbar" 
-										 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-										 aria-label="Уровень навыка Bootstrap: 80 процентов">
-										<div class="progress-bar bg-success" style="width: 80%"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                <!-- Навыки -->
+                <section class="section" aria-labelledby="skills-heading">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 id="skills-heading" class="card-title">
+                                <i class="fas fa-tools" aria-hidden="true"></i> Мои навыки
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <div class="skill-item">
+                                        <div class="skill-header">
+                                            <span>HTML</span>
+                                            <span class="skill-percent">90%</span>
+                                        </div>
+                                        <div class="skill-progress" role="progressbar" 
+                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                             aria-label="Уровень навыка HTML: 90 процентов">
+                                            <div class="skill-progress-bar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-header">
+                                            <span>JavaScript</span>
+                                            <span class="skill-percent">75%</span>
+                                        </div>
+                                        <div class="skill-progress" role="progressbar" 
+                                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                             aria-label="Уровень навыка JavaScript: 75 процентов">
+                                            <div class="skill-progress-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <div class="skill-item">
+                                        <div class="skill-header">
+                                            <span>CSS</span>
+                                            <span class="skill-percent">85%</span>
+                                        </div>
+                                        <div class="skill-progress" role="progressbar" 
+                                             aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                             aria-label="Уровень навыка CSS: 85 процентов">
+                                            <div class="skill-progress-bar" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-header">
+                                            <span>Bootstrap</span>
+                                            <span class="skill-percent">80%</span>
+                                        </div>
+                                        <div class="skill-progress" role="progressbar" 
+                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                             aria-label="Уровень навыка Bootstrap: 80 процентов">
+                                            <div class="skill-progress-bar" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-			<section class="mb-5" aria-labelledby="projects-heading">
-				<div class="card shadow">
-					<div class="card-header bg-light">
-						<h3 id="projects-heading" class="card-title h5 mb-0">
-							<i class="bi bi-folder-fill text-primary" aria-hidden="true"></i> Лучшие проекты
-						</h3>
-					</div>
-					<div class="card-body">
-						<div class="projects-grid">
-							<!-- Проект 1: Личный сайт -->
-							<div class="project-item">
-								<a href="./index.html" class="text-decoration-none">
-									<article class="card project-card h-100">
-										<picture>
-											<source srcset="assets/img/Project1.webp" type="image/webp">
-											<img src="assets/img/Project1.png" 
-												 class="card-img-top adaptive-image object-fit-cover" 
-												 alt="Скриншот личного сайта-портфолио"
-												 style="height: 150px;"
-												 width="300"
-												 height="150"
-												 loading="lazy">
-										</picture>
-										<div class="card-body">
-											<h4 class="card-title h5">Личный сайт</h4>
-											<p class="card-text small text-muted">
-												Сайт-портфолио на HTML, CSS и Bootstrap с адаптивным дизайном.
-											</p>
-											<div class="mb-2">
-												<span class="jumping-badge badge bg-primary">HTML</span>
-												<span class="jumping-badge badge bg-danger">CSS</span>
-												<span class="jumping-badge badge bg-success">Bootstrap</span>
-											</div>
-										</div>
-									</article>
-								</a>
-							</div>
-							
-							<!-- Проект 2: Todo-приложение -->
-							<div class="project-item">
-								<a href="src/todo.html" class="text-decoration-none">
-									<article class="card project-card h-100">
-										<picture>
-											<source srcset="assets/img/Project2.webp" type="image/webp">
-											<img src="assets/img/Project2.png" 
-												 class="card-img-top adaptive-image object-fit-cover" 
-												 alt="Скриншот Todo-приложения"
-												 style="height: 150px;"
-												 width="300"
-												 height="150"
-												 loading="lazy">
-										</picture>
-										<div class="card-body">
-											<h4 class="card-title h5">Todo-приложение</h4>
-											<p class="card-text small text-muted">
-												Интерактивное приложение для управления задачами на чистом JavaScript.
-											</p>
-											<div class="mb-2">
-												<span class="jumping-badge badge bg-warning">JavaScript</span>
-												<span class="jumping-badge badge bg-danger">CSS</span>
-												<span class="jumping-badge badge bg-primary">HTML</span>
-											</div>
-										</div>
-									</article>
-								</a>
-							</div>
-							
-							<!-- Проект 3: Интернет-магазин -->
-							<div class="project-item">
-								<a href="src/shop.html" class="text-decoration-none">
-									<article class="card project-card h-100">
-										<picture>
-											<source srcset="assets/img/Project3.webp" type="image/webp">
-											<img src="assets/img/Project3.png" 
-												 class="card-img-top adaptive-image object-fit-cover" 
-												 alt="Скриншот интернет-магазина"
-												 style="height: 150px;"
-												 width="300"
-												 height="150"
-												 loading="lazy">
-										</picture>
-										<div class="card-body">
-											<h4 class="card-title h5">Интернет-магазин</h4>
-											<p class="card-text small text-muted">
-												Полнофункциональный интернет-магазин с корзиной и системой заказов.
-											</p>
-											<div class="mb-2">
-												<span class="jumping-badge badge bg-info">React</span>
-												<span class="jumping-badge badge bg-warning">JavaScript</span>
-												<span class="jumping-badge badge bg-success">Node.js</span>
-											</div>
-										</div>
-									</article>
-								</a>
-							</div>
-							
-							<div class="project-item">
-								<a href="src/index_bootstrap.html" class="text-decoration-none">
-									<article class="card project-card h-100">
-										<picture>
-											<source srcset="assets/img/Project4.webp" type="image/webp">
-											<img src="assets/img/Project4.png" 
-												 class="card-img-top adaptive-image object-fit-cover" 
-												 alt="Скриншот портфолио на Bootstrap"
-												 style="height: 150px;"
-												 width="300"
-												 height="150"
-												 loading="lazy">
-										</picture>
-										<div class="card-body">
-											<h4 class="card-title h5">Портфолио Bootstrap</h4>
-											<p class="card-text small text-muted">
-												Адаптивное портфолио с использованием Bootstrap 5 и современных CSS-техник.
-											</p>
-											<div class="mb-2">
-												<span class="jumping-badge badge bg-success">Bootstrap</span>
-												<span class="jumping-badge badge bg-primary">HTML</span>
-												<span class="jumping-badge badge bg-danger">CSS</span>
-											</div>
-										</div>
-									</article>
-								</a>
-							</div>
-						</div>
-						
-						<div class="text-center mt-4">
-							<a href="src/projects.html" class="btn btn-primary">
-								<i class="bi bi-grid-3x3-gap me-2" aria-hidden="true"></i>Все проекты
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<section class="mb-5 full-bleed" aria-labelledby="contact-preview-heading">
-				<div class="bg-light text-dark py-5">
-					<div class="container text-center">
-						<h3 id="contact-preview-heading" class="h4 mb-3">Готовы к сотрудничеству?</h3>
-						<p class="mb-4">Свяжитесь со мной для обсуждения вашего проекта</p>
-						<a href="src/contacts.html" class="btn btn-primary btn-lg">
-							<i class="bi bi-envelope me-2" aria-hidden="true"></i>Написать сообщение
-						</a>
-					</div>
-				</div>
-			</section>
-		</main>
+                <!-- Проекты -->
+                <section class="section" aria-labelledby="projects-heading">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 id="projects-heading" class="card-title">
+                                <i class="fas fa-folder-open" aria-hidden="true"></i> Лучшие проекты
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="projects-grid">
+                                <article class="project-card">
+                                    <a href="src/projects.html" class="project-link" aria-label="Перейти к проекту 'Личный сайт'">
+                                        <div class="project-image-container">
+                                            <img src="assets/img/Project1.png"
+                                                 class="project-image" 
+                                                 alt="Скриншот личного сайта-портфолио"
+                                                 width="400"
+                                                 height="250"
+                                                 loading="lazy">
+                                        </div>
+                                        <div class="project-content">
+                                            <h4 class="project-title">Личный сайт</h4>
+                                            <p class="project-description">
+                                                Сайт-портфолио на HTML, CSS и Bootstrap с адаптивным дизайном.
+                                            </p>
+                                            <div class="project-tags">
+                                                <span class="project-tag">HTML</span>
+                                                <span class="project-tag">CSS</span>
+                                                <span class="project-tag">Bootstrap</span>
+                                            </div>
+                                            <div class="project-meta">
+                                                <time datetime="2024-10">Октябрь 2024</time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                
+                                <article class="project-card">
+                                    <a href="src/projects.html" class="project-link" aria-label="Перейти к проекту 'Todo-приложение'">
+                                        <div class="project-image-container">
+                                            <img src="assets/img/Project2.png" 
+                                                 class="project-image" 
+                                                 alt="Скриншот Todo-приложения"
+                                                 width="400"
+                                                 height="250"
+                                                 loading="lazy">
+                                        </div>
+                                        <div class="project-content">
+                                            <h4 class="project-title">Todo-приложение</h4>
+                                            <p class="project-description">
+                                                Интерактивное приложение для управления задачами на чистом JavaScript.
+                                            </p>
+                                            <div class="project-tags">
+                                                <span class="project-tag">JavaScript</span>
+                                                <span class="project-tag">CSS</span>
+                                                <span class="project-tag">HTML</span>
+                                            </div>
+                                            <div class="project-meta">
+                                                <time datetime="2024-11">Ноябрь 2024</time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                
+                                <article class="project-card">
+                                    <a href="src/projects.html" class="project-link" aria-label="Перейти к проекту 'Интернет-магазин'">
+                                        <div class="project-image-container">
+                                            <img src="assets/img/Project3.png" 
+                                                 class="project-image" 
+                                                 alt="Скриншот интернет-магазина"
+                                                 width="400"
+                                                 height="250"
+                                                 loading="lazy">
+                                        </div>
+                                        <div class="project-content">
+                                            <h4 class="project-title">Интернет-магазин</h4>
+                                            <p class="project-description">
+                                                Полнофункциональный интернет-магазин с корзиной и системой заказов.
+                                            </p>
+                                            <div class="project-tags">
+                                                <span class="project-tag">React</span>
+                                                <span class="project-tag">JavaScript</span>
+                                                <span class="project-tag">Node.js</span>
+                                            </div>
+                                            <div class="project-meta">
+                                                <time datetime="2024-12">Декабрь 2024</time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                
+                                <article class="project-card">
+                                    <a href="src/projects.html" class="project-link" aria-label="Перейти к проекту 'Портфолио Bootstrap'">
+                                        <div class="project-image-container">
+                                            <img src="assets/img/Project4.png" 
+                                                 class="project-image" 
+                                                 alt="Скриншот портфолио на Bootstrap"
+                                                 width="400"
+                                                 height="250"
+                                                 loading="lazy">
+                                        </div>
+                                        <div class="project-content">
+                                            <h4 class="project-title">Портфолио Bootstrap</h4>
+                                            <p class="project-description">
+                                                Адаптивное портфолио с использованием Bootstrap 5 и современных CSS-техник.
+                                            </p>
+                                            <div class="project-tags">
+                                                <span class="project-tag">Bootstrap</span>
+                                                <span class="project-tag">HTML</span>
+                                                <span class="project-tag">CSS</span>
+                                            </div>
+                                            <div class="project-meta">
+                                                <time datetime="2025-01">Январь 2025</time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            
+                            <div class="text-center">
+                                <a href="src/projects.html" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-th-large" aria-hidden="true"></i> Все проекты
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- CTA секция -->
+                <section class="cta-section" aria-labelledby="contact-preview-heading">
+                    <div class="cta-container">
+                        <div class="cta-content">
+                            <h3 id="contact-preview-heading" class="cta-title">Готовы к сотрудничеству?</h3>
+                            <p class="cta-description">Свяжитесь со мной для обсуждения вашего проекта</p>
+                            <a href="src/contacts.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Написать сообщение
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
 
-		<footer class="bg-dark text-white py-4 mt-5" role="contentinfo">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-6">
-						<p class="mb-0">&copy; 2025 Портфолио студента. Все права защищены.</p>
-					</div>
-					<div class="col-md-6 text-md-end">
-						<i class="bi bi-telephone me-1" aria-hidden="true"></i>
-						<a href="src/contacts_bootstrap.html" class="text-white text-decoration-none me-3">Контакты</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			const progressBars = document.querySelectorAll('.progress[role="progressbar"]');
-			progressBars.forEach(bar => {
-				const value = bar.getAttribute('aria-valuenow');
-				bar.setAttribute('aria-valuetext', `${value}% завершено`);
-			});
-			
-			const skipLink = document.querySelector('.skip-link');
-			const mainContent = document.getElementById('main');
-			
-			if (skipLink && mainContent) {
-				skipLink.addEventListener('click', function(e) {
-					e.preventDefault();
-					mainContent.focus();
-				});
-			}
-			
-			const projectCards = document.querySelectorAll('.project-card');
-			projectCards.forEach((card, index) => {
-				card.style.opacity = '0';
-				card.style.transform = 'translateY(20px)';
-				
-				setTimeout(() => {
-					card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-					card.style.opacity = '1';
-					card.style.transform = 'translateY(0)';
-				}, 100 * index);
-			});
-		});
-	</script>
+        <footer class="site-footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Портфолио студента. Все права защищены.</p>
+                    </div>
+                    <div class="footer-links">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <a href="src/contacts.html" class="footer-link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Навигация
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                    navToggle.setAttribute('aria-expanded', !isExpanded);
+                    navMenu.classList.toggle('show');
+                });
+                
+                // Закрытие меню при клике вне его
+                document.addEventListener('click', function(event) {
+                    if (!event.target.closest('.main-nav') && navMenu.classList.contains('show')) {
+                        navMenu.classList.remove('show');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+            
+            // Анимация появления проектов
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+            
+            // Skip link
+            const skipLink = document.querySelector('.skip-link');
+            const mainContent = document.getElementById('main');
+            
+            if (skipLink && mainContent) {
+                skipLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    mainContent.focus();
+                });
+            }
+        });
+    </script>
 </body>
 </html>
